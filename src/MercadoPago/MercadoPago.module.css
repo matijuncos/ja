@@ -1,0 +1,108 @@
+.container {
+   min-height: 40vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.error {
+   color: red;
+}
+
+.paymentMethods p {
+ color: #000
+}
+
+.paymentMethods li {
+   color: #000;
+   display: flex;
+   align-items: center;
+   margin: 1em;
+   position: relative;
+}
+
+.paymentMethods li::after {
+   position:absolute;
+   content: "";
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   left: 0;
+   top: 50%;
+   transform: translate(-140%, -50%);
+   background-color: #E289F4 ;
+}
+
+.paymentMethods img {
+   width: 10%;
+}
+
+.inputGroup input{
+   /* margin-top: 0.6em; */
+   padding: 8px;
+   border-radius: 3px;
+   border: none;
+   max-width: 240px;
+   border: solid 2px;
+   height: 100%;
+}
+
+.validarCuponBtn {
+   padding: 8px;
+   margin-left: 12px;
+   background-color: #E289F4 ;
+   font-family: Montserrat-bold;
+   border: 2px solid black;
+   border-radius: 3px;
+}
+.iHaveCoupon {
+   background-color: #8eacee;
+   width: fit-content;
+   padding: 12px 18px;
+   border: solid 3px ;
+   cursor: pointer;
+   margin:  2em auto;
+}
+.couponValidator {
+   width: fit-content;
+   margin: 2em auto;
+}
+.couponValidator input {
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    max-width: 240px;
+    border: solid 2px;
+    height: 100%;
+}
+.summary {
+   text-align: center;
+}
+/* .flexIt {
+   margin-top:1.2em;
+   margin-bottom:1.2em;
+   display: flex;
+   align-items: flex-start;
+   justify-content:space-between
+}
+.flexIt div:last-child {
+   flex: 1;
+   margin-left: 1em;
+} */
+.mpBtn {
+   width: 100%;
+   display: inline-block;
+   margin: auto;
+   padding: 10px 24px;
+   background-color: #009EE3;
+   color: #fff;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 1.4em;
+}
+.mpBtn:hover {
+   background-color: #0d52d4;
+
+}
